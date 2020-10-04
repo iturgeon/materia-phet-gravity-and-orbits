@@ -107,121 +107,121 @@ const ignoreCopy = [
 const copy = [
 	...widgetWebpack.getDefaultCopyList(),
     {
-		from: path.join(__dirname, 'node_modules', "gravity-and-orbits"),
+		from: path.join(__dirname, 'node_modules', "phet-gravity-and-orbits"),
 		to: path.join(outputPath, 'assets', "gravity-and-orbits"),
 		toType: 'dir',
 		ignore: ignoreCopy
 	},
     {
-		from: path.join(__dirname, 'node_modules', "assert"),
+		from: path.join(__dirname, 'node_modules', "phet-assert"),
 		to: path.join(outputPath, 'assets', "assert"),
 		toType: 'dir',
 		ignore: ignoreCopy
 	},
     {
-		from: path.join(__dirname, 'node_modules', "axon"),
+		from: path.join(__dirname, 'node_modules', "phet-axon"),
 		to: path.join(outputPath, 'assets', "axon"),
 		toType: 'dir',
 		ignore: ignoreCopy
 	},
     {
-		from: path.join(__dirname, 'node_modules', "babel"),
+		from: path.join(__dirname, 'node_modules', "phet-babel"),
 		to: path.join(outputPath, 'assets', "babel"),
 		toType: 'dir',
 		ignore: ignoreCopy
 	},
     {
-		from: path.join(__dirname, 'node_modules', "brand"),
+		from: path.join(__dirname, 'node_modules', "phet-brand"),
 		to: path.join(outputPath, 'assets', "brand"),
 		toType: 'dir',
 		ignore: ignoreCopy
 	},
     {
-		from: path.join(__dirname, 'node_modules', "chipper"),
+		from: path.join(__dirname, 'node_modules', "phet-chipper"),
 		to: path.join(outputPath, 'assets', "chipper"),
 		toType: 'dir',
 		ignore: ignoreCopy
 	},
     {
-		from: path.join(__dirname, 'node_modules', "dot"),
+		from: path.join(__dirname, 'node_modules', "phet-dot"),
 		to: path.join(outputPath, 'assets', "dot"),
 		toType: 'dir',
 		ignore: ignoreCopy
 	},
     {
-		from: path.join(__dirname, 'node_modules', "joist"),
+		from: path.join(__dirname, 'node_modules', "phet-joist"),
 		to: path.join(outputPath, 'assets', "joist"),
 		toType: 'dir',
 		ignore: ignoreCopy
 	},
     {
-		from: path.join(__dirname, 'node_modules', "kite"),
+		from: path.join(__dirname, 'node_modules', "phet-kite"),
 		to: path.join(outputPath, 'assets', "kite"),
 		toType: 'dir',
 		ignore: ignoreCopy
 	},
     {
-		from: path.join(__dirname, 'node_modules', "phet-core"),
+		from: path.join(__dirname, 'node_modules', "phet-phet-core"),
 		to: path.join(outputPath, 'assets', "phet-core"),
 		toType: 'dir',
 		ignore: ignoreCopy
 	},
     {
-		from: path.join(__dirname, 'node_modules', "phetcommon"),
+		from: path.join(__dirname, 'node_modules', "phet-phetcommon"),
 		to: path.join(outputPath, 'assets', "phetcommon"),
 		toType: 'dir',
 		ignore: ignoreCopy
 	},
     {
-		from: path.join(__dirname, 'node_modules', "phetmarks"),
+		from: path.join(__dirname, 'node_modules', "phet-phetmarks"),
 		to: path.join(outputPath, 'assets', "phetmarks"),
 		toType: 'dir',
 		ignore: ignoreCopy
 	},
     {
-		from: path.join(__dirname, 'node_modules', "query-string-machine"),
+		from: path.join(__dirname, 'node_modules', "phet-query-string-machine"),
 		to: path.join(outputPath, 'assets', "query-string-machine"),
 		toType: 'dir',
 		ignore: ignoreCopy
 	},
     {
-		from: path.join(__dirname, 'node_modules', "scenery"),
+		from: path.join(__dirname, 'node_modules', "phet-scenery"),
 		to: path.join(outputPath, 'assets', "scenery"),
 		toType: 'dir',
 		ignore: ignoreCopy
 	},
     {
-		from: path.join(__dirname, 'node_modules', "scenery-phet"),
+		from: path.join(__dirname, 'node_modules', "phet-scenery-phet"),
 		to: path.join(outputPath, 'assets', "scenery-phet"),
 		toType: 'dir',
 		ignore: ignoreCopy
 	},
     {
-		from: path.join(__dirname, 'node_modules', "sherpa"),
+		from: path.join(__dirname, 'node_modules', "phet-sherpa"),
 		to: path.join(outputPath, 'assets', "sherpa"),
 		toType: 'dir',
 		ignore: ignoreCopy
 	},
     {
-		from: path.join(__dirname, 'node_modules', "sun"),
+		from: path.join(__dirname, 'node_modules', "phet-sun"),
 		to: path.join(outputPath, 'assets', "sun"),
 		toType: 'dir',
 		ignore: ignoreCopy
 	},
     {
-		from: path.join(__dirname, 'node_modules', "tambo"),
+		from: path.join(__dirname, 'node_modules', "phet-tambo"),
 		to: path.join(outputPath, 'assets', "tambo"),
 		toType: 'dir',
 		ignore: ignoreCopy
 	},
     {
-		from: path.join(__dirname, 'node_modules', "tandem"),
+		from: path.join(__dirname, 'node_modules', "phet-tandem"),
 		to: path.join(outputPath, 'assets', "tandem"),
 		toType: 'dir',
 		ignore: ignoreCopy
 	},
     {
-		from: path.join(__dirname, 'node_modules', "utterance-queue"),
+		from: path.join(__dirname, 'node_modules', "phet-utterance-queue"),
 		to: path.join(outputPath, 'assets', "utterance-queue"),
 		toType: 'dir',
 		ignore: ignoreCopy
