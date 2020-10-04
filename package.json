@@ -1,7 +1,7 @@
 {
   "name": "@ucfcdl/phet-materia-gravity-and-orbits",
   "materia": {
-    "cleanName": "Gravity and Orbits by PhET"
+    "cleanName": "gravity-and-orbits-by-phet"
   },
   "dependencies": {
     "materia-widget-development-kit": "2.5.0",
@@ -39,7 +39,7 @@
     "test": "jest",
     "test-ci": "TZ='America/New_York' CI=true jest --ci --useStderr --coverage --coverageReporters text-summary cobertura"
   },
-  "author": "University of Central Florida, Center for Distributed Learning",
-  "description": "Syntax Sorter Materia Widget. A tool for arranging sentences or phrases based on the syntactic structure of individual tokens.",
+  "author": "University of Colorado Boulder",
+  "description": "Gravity and Orbits by PhET Interactive Simulations, University of Colorado Bolder wrapped in a Materia widget",
   "version": "1.0.0"
 }
