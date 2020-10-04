@@ -33,11 +33,11 @@
   "scripts": {
     "install": "napa",
     "start": "webpack-dev-server",
-    "lint": "eslint src/**/*.js",
+    "lint": "echo 'not implemented'",
     "build": "webpack -p",
     "build-dev": "webpack",
-    "test": "jest",
-    "test-ci": "TZ='America/New_York' CI=true jest --ci --useStderr --coverage --coverageReporters text-summary cobertura"
+    "test": "echo 'not implemented'",
+    "test-ci": "echo 'not implemented'"
   },
   "author": "University of Colorado Boulder",
   "description": "Gravity and Orbits by PhET Interactive Simulations, University of Colorado Bolder wrapped in a Materia widget",
