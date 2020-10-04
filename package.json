@@ -1,0 +1,45 @@
+{
+  "name": "@ucfcdl/phet-materia-gravity-and-orbits",
+  "materia": {
+    "cleanName": "Gravity and Orbits by PhET"
+  },
+  "dependencies": {
+    "materia-widget-development-kit": "2.5.0",
+    "napa": "^3.0.0"
+  },
+  "devDependencies": {},
+  "napa": {
+    "gravity-and-orbits": "phetsims/gravity-and-orbits",
+    "assert": "phetsims/assert",
+    "axon": "phetsims/axon",
+    "babel": "phetsims/babel",
+    "brand": "phetsims/brand",
+    "chipper": "phetsims/chipper",
+    "dot": "phetsims/dot",
+    "joist": "phetsims/joist",
+    "kite": "phetsims/kite",
+    "phet-core": "phetsims/phet-core",
+    "phetcommon": "phetsims/phetcommon",
+    "phetmarks": "phetsims/phetmarks",
+    "query-string-machine": "phetsims/query-string-machine",
+    "scenery": "phetsims/scenery",
+    "scenery-phet": "phetsims/scenery-phet",
+    "sherpa": "phetsims/sherpa",
+    "sun": "phetsims/sun",
+    "tambo": "phetsims/tambo",
+    "tandem": "phetsims/tandem",
+    "utterance-queue": "phetsims/utterance-queue"
+  },
+  "scripts": {
+    "install": "napa",
+    "start": "webpack-dev-server",
+    "lint": "eslint src/**/*.js",
+    "build": "webpack -p",
+    "build-dev": "webpack",
+    "test": "jest",
+    "test-ci": "TZ='America/New_York' CI=true jest --ci --useStderr --coverage --coverageReporters text-summary cobertura"
+  },
+  "author": "University of Central Florida, Center for Distributed Learning",
+  "description": "Syntax Sorter Materia Widget. A tool for arranging sentences or phrases based on the syntactic structure of individual tokens.",
+  "version": "1.0.0"
+}
