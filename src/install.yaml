@@ -1,0 +1,29 @@
+general:
+  name: Gravity and Orbits
+  group: PhET
+  height: 680
+  width: 900
+  in_catalog: Yes
+  is_editable: No
+  is_playable: Yes
+  is_qset_encrypted: Yes
+  is_answer_encrypted: Yes
+  is_storage_enabled: No
+  api_version: 2
+files:
+  player: player.html
+  creator: default
+  # creator_guide: guides/creator.html
+  # player_guide: guides/player.html
+  flash_version: 0
+score:
+  is_scorable: No
+  # score_module: LanguageWidget
+  # score_screen: scoreScreen.html
+meta_data:
+  features:
+  supported_data:
+  about: >
+    Create sentences or phrases out of individual tokens and categorize them based on their syntax. Students must arrange the tokens correctly.
+  excerpt: >
+    Tokenize sentences or phrases and identify each element based on its syntax. Students are tasked with correctly arranging the tokens.
