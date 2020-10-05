@@ -104,161 +104,47 @@ const ignoreCopy = [
 	'**/mechamarkers-21f16221e414ec2dca68bbfbb866369eea7abd70.js'
 ]
 
+const copyPhetSrc = [
+	'gravity-and-orbits',
+	'assert',
+	'axon',
+	'babel',
+	'brand',
+	'chipper',
+	'dot',
+	'joist',
+	'kite',
+	'phet-core',
+	'phetcommon',
+	'phetmarks',
+	'query-string-machine',
+	'scenery',
+	'scenery-phet',
+	'sherpa',
+	'sun',
+	'tambo',
+	'tandem',
+	'utterance-queue',
+]
+
 const copy = [
 	...widgetWebpack.getDefaultCopyList(),
-    {
-		from: path.join(__dirname, 'node_modules', "phet-gravity-and-orbits"),
-		to: path.join(outputPath, 'assets', "gravity-and-orbits"),
+	...copyPhetSrc.map(src => ({
+		from: path.join(__dirname, 'node_modules', `phet-${src}`),
+		to: path.join(outputPath, 'assets', src),
 		toType: 'dir',
 		ignore: ignoreCopy
-	},
-    {
-		from: path.join(__dirname, 'node_modules', "phet-assert"),
-		to: path.join(outputPath, 'assets', "assert"),
-		toType: 'dir',
-		ignore: ignoreCopy
-	},
-    {
-		from: path.join(__dirname, 'node_modules', "phet-axon"),
-		to: path.join(outputPath, 'assets', "axon"),
-		toType: 'dir',
-		ignore: ignoreCopy
-	},
-    {
-		from: path.join(__dirname, 'node_modules', "phet-babel"),
-		to: path.join(outputPath, 'assets', "babel"),
-		toType: 'dir',
-		ignore: ignoreCopy
-	},
-    {
-		from: path.join(__dirname, 'node_modules', "phet-brand"),
-		to: path.join(outputPath, 'assets', "brand"),
-		toType: 'dir',
-		ignore: ignoreCopy
-	},
-    {
-		from: path.join(__dirname, 'node_modules', "phet-chipper"),
-		to: path.join(outputPath, 'assets', "chipper"),
-		toType: 'dir',
-		ignore: ignoreCopy
-	},
-    {
-		from: path.join(__dirname, 'node_modules', "phet-dot"),
-		to: path.join(outputPath, 'assets', "dot"),
-		toType: 'dir',
-		ignore: ignoreCopy
-	},
-    {
-		from: path.join(__dirname, 'node_modules', "phet-joist"),
-		to: path.join(outputPath, 'assets', "joist"),
-		toType: 'dir',
-		ignore: ignoreCopy
-	},
-    {
-		from: path.join(__dirname, 'node_modules', "phet-kite"),
-		to: path.join(outputPath, 'assets', "kite"),
-		toType: 'dir',
-		ignore: ignoreCopy
-	},
-    {
-		from: path.join(__dirname, 'node_modules', "phet-phet-core"),
-		to: path.join(outputPath, 'assets', "phet-core"),
-		toType: 'dir',
-		ignore: ignoreCopy
-	},
-    {
-		from: path.join(__dirname, 'node_modules', "phet-phetcommon"),
-		to: path.join(outputPath, 'assets', "phetcommon"),
-		toType: 'dir',
-		ignore: ignoreCopy
-	},
-    {
-		from: path.join(__dirname, 'node_modules', "phet-phetmarks"),
-		to: path.join(outputPath, 'assets', "phetmarks"),
-		toType: 'dir',
-		ignore: ignoreCopy
-	},
-    {
-		from: path.join(__dirname, 'node_modules', "phet-query-string-machine"),
-		to: path.join(outputPath, 'assets', "query-string-machine"),
-		toType: 'dir',
-		ignore: ignoreCopy
-	},
-    {
-		from: path.join(__dirname, 'node_modules', "phet-scenery"),
-		to: path.join(outputPath, 'assets', "scenery"),
-		toType: 'dir',
-		ignore: ignoreCopy
-	},
-    {
-		from: path.join(__dirname, 'node_modules', "phet-scenery-phet"),
-		to: path.join(outputPath, 'assets', "scenery-phet"),
-		toType: 'dir',
-		ignore: ignoreCopy
-	},
-    {
-		from: path.join(__dirname, 'node_modules', "phet-sherpa"),
-		to: path.join(outputPath, 'assets', "sherpa"),
-		toType: 'dir',
-		ignore: ignoreCopy
-	},
-    {
-		from: path.join(__dirname, 'node_modules', "phet-sun"),
-		to: path.join(outputPath, 'assets', "sun"),
-		toType: 'dir',
-		ignore: ignoreCopy
-	},
-    {
-		from: path.join(__dirname, 'node_modules', "phet-tambo"),
-		to: path.join(outputPath, 'assets', "tambo"),
-		toType: 'dir',
-		ignore: ignoreCopy
-	},
-    {
-		from: path.join(__dirname, 'node_modules', "phet-tandem"),
-		to: path.join(outputPath, 'assets', "tandem"),
-		toType: 'dir',
-		ignore: ignoreCopy
-	},
-    {
-		from: path.join(__dirname, 'node_modules', "phet-utterance-queue"),
-		to: path.join(outputPath, 'assets', "utterance-queue"),
-		toType: 'dir',
-		ignore: ignoreCopy
-	}
+	}))
 ]
 
 const entries = {
-	// 'common.css': [
-	// 	path.join(srcPath, 'common.scss')
-	// ],
 	'player.css': [
 		path.join(srcPath, 'player.html'),
 		path.join(srcPath, 'player.scss'),
 	],
-	// 'creator.css': [
-	// 	path.join(srcPath, 'creator.html'),
-	// 	path.join(srcPath, 'creator.scss')
-	// ],
 	'player.js': [
 		path.join(srcPath, 'player.js')
-	],
-	// 'creator.js': [
-	// 	path.join(srcPath, 'creator.js')
-	// ],
-	// 'scoreScreen.js': [
-	// 	path.join(srcPath, 'scoreScreen.js')
-	// ],
-	// 'scoreScreen.css': [
-	// 	path.join(srcPath, 'scoreScreen.html'),
-	// 	path.join(srcPath, 'scoreScreen.scss')
-	// ],
-	// 'guides/player.temp.html': [
-	// 	path.join(srcPath, '_guides/player.md')
-	// ],
-	// 'guides/creator.temp.html': [
-	// 	path.join(srcPath, '_guides/creator.md')
-	// ]
+	]
 }
 
 const customRules = [
