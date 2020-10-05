@@ -13,17 +13,14 @@ general:
 files:
   player: player.html
   creator: default
-  # creator_guide: guides/creator.html
-  # player_guide: guides/player.html
   flash_version: 0
 score:
   is_scorable: No
-  # score_module: LanguageWidget
-  # score_screen: scoreScreen.html
+  score_module: GravityAndOrbits
 meta_data:
   features:
   supported_data:
   about: >
-    Create sentences or phrases out of individual tokens and categorize them based on their syntax. Students must arrange the tokens correctly.
+    Move the sun, earth, moon and space station to see how it affects their gravitational forces and orbital paths. Visualize the sizes and distances between different heavenly bodies, and turn off gravity to see what would happen without it!
   excerpt: >
-    Tokenize sentences or phrases and identify each element based on its syntax. Students are tasked with correctly arranging the tokens.
+    Move the sun, earth, moon and space station to see how it affects their gravitational forces and orbital paths
